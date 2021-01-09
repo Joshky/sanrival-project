@@ -23,7 +23,7 @@
     top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 100;
+    z-index: 2;
 }
 
 .container h1 {
@@ -72,6 +72,10 @@ header.sticky .brand, header.sticky ul li a {
     color: black;
 }
 
+header.sticky ul li a:hover {
+    color: gold;
+}
+
 header .brand {
     font-size: 2rem;
     text-decoration: none;
@@ -79,7 +83,6 @@ header .brand {
     font-family: 'Charmonman', serif;
     font-weight: 700;
     font-style: italic;
-    letter-spacing: 4px;
     text-transform: uppercase;
 }
 
@@ -104,8 +107,24 @@ header ul li a {
     letter-spacing: 2px;
     font-weight: 600;
     text-transform: uppercase;
+    padding-bottom: 10px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom .3s;
 }
 
+header ul li a:hover {
+    color: #fff;
+    border-bottom: 1px solid gold;
+}
+
+.btn-text {
+    font-family: 'Charmonman';
+    font-weight: 700;
+}
+
+.btn-fill {
+    background: #ffe05d;
+}
 
 .container-fluid {
     padding: 10% 15% 5%;
