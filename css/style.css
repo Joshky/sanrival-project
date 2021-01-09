@@ -70,6 +70,7 @@ header.sticky {
 
 header.sticky .brand, header.sticky ul li a {
     color: black;
+    transition: color .2s;
 }
 
 header.sticky ul li a:hover {
